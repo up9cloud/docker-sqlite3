@@ -1,4 +1,5 @@
 # docker-sqlite3
+
 A sqlite3 client.
 
 ## Usage
@@ -12,7 +13,7 @@ sstc/sqlite3 \
 sqlite3 database.db
 ```
 
-```
+```console
 SQLite version 3.18.0 2017-03-28 18:48:43
 Enter ".help" for usage hints.
 sqlite> .tables
