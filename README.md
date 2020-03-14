@@ -5,21 +5,21 @@ A sqlite3 client.
 ## Usage
 
 ```sh
+touch ~/database.db
+
 docker run \
 -it \
 --rm \
--v ~/database.db:/data/database.db \
+-v ~:/data \
 sstc/sqlite3 \
 sqlite3 database.db
 ```
 
 ```console
-SQLite version 3.18.0 2017-03-28 18:48:43
+SQLite version 3.30.1 2019-10-10 20:19:45
 Enter ".help" for usage hints.
+sqlite> CREATE TABLE test (id INTEGER, name TEXT);
 sqlite> .tables
-co_art_map       co_container     co_session       co_username_log
-co_block         co_entity        co_sign          co_version     
-co_chat          co_entity_map    co_skull         co_world       
-co_command       co_material_map  co_user        
+test
 sqlite> .exit
 ```
